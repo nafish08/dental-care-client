@@ -6,17 +6,23 @@ const ContactForm = () => {
     return (
         <section style={{
             background: `url(${appointment})`
-        }} className='p-5'>
-            <div className='text-center'>
-                <h4 className='text-xl text-primary font-bold'>Contact Us</h4>
-                <h2 className='text-3xl text-white'>Stay Connected with us</h2>
-            </div>
-            <div className="form-control lg:w-1/2 m-auto p-5">
-                <input type="text" placeholder="Email Address" className="input input-bordered my-5" />
-                <input type="text" placeholder="Subject" className="input input-bordered " />
-                <textarea className="textarea textarea-bordered my-5" placeholder="Your Message"></textarea>
-                <PrimaryButton>Submit</PrimaryButton>
-            </div>
+        }} className='p-5 my-5 text-center'>
+            <h3 className='text-xl font-bold text-primary'>Contact Us</h3>
+            <h2 className='text-3xl text-white'>Stay connected with us</h2>
+            <form class="card-body mx-auto my-5 lg:w-1/2">
+                <div class="form-control mb-5">
+                    <input type="email" placeholder="Email Address" class="input input-bordered" required />
+                </div>
+                <div class="form-control mb-5">
+                    <input type="password" placeholder="Subject" class="input input-bordered" required />
+                </div>
+                <div className='form-control mb-5'>
+                    <textarea class="textarea h-28" placeholder="Your Message"></textarea>
+                </div>
+                <div class="form-control mx-auto mt-6 w-1/4">
+                    <button class="btn bg-primary text-white uppercase">Submit</button>
+                </div>
+            </form>
         </section>
     );
 };
