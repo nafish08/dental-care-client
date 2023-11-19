@@ -6,11 +6,11 @@ import DentalCare from './DentalCare';
 import MakeAppointment from './MakeAppointment';
 import Testimonials from './Testimonials';
 import ContactForm from './ContactForm';
-import Footer from './Footer';
+import Footer from '../Shared/Footer';
 
 const Home = () => {
     return (
-        <div className='px-12'>
+        <div className='sm:px-12'>
             <Banner></Banner>
             <Info></Info>
             <Services></Services>
