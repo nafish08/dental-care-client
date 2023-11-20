@@ -6,7 +6,7 @@ import PrimaryButton from '../Shared/PrimaryButton';
 const Banner = () => {
     return (
         <div className="hero min-h-screen">
-            <div className="hero-content flex-col lg:flex-row-reverse">
+            <div className="hero-content flex-col lg:flex-row-reverse gap-x-20">
                 <img src={chair} className="max-w-sm rounded-lg shadow-2xl" />
                 <div>
                     <h1 className="text-5xl font-bold">Your Gateway to Personalized Patient Care</h1>
