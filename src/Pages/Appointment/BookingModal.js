@@ -5,6 +5,7 @@ const BookingModal = ({ date, treatment, setTreatment }) => {
 
     const { _id, name, slots } = treatment;
 
+    // Geting data from the form on submit
     const handleBooking = event => {
         event.preventDefault();
         const slot = event.target.slot.value;

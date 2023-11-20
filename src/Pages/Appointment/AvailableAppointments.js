@@ -5,12 +5,12 @@ import BookingModal from './BookingModal';
 
 const AvailableAppointments = ({ date, setDate }) => {
 
-    // Fetching data from appointmentOptions.json file
+    // Fetching data from http://localhost:5000/appointment_options file
     const [services, setServices] = useState([]);
     const [treatment, setTreatment] = useState(null);
 
     useEffect(() => {
-        fetch('appointmentOptions.json')
+        fetch('http://localhost:5000/appointment_options')
             .then(res => res.json())
             .then(data => setServices(data));
     }, [])
