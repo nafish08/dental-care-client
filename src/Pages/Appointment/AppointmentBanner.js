@@ -23,27 +23,27 @@ const css = `
 
 const AppointmentBanner = ({ date, setDate }) => {
 
-    return (
-        <div className="hero min-h-screen bg-base-200">
-            <div className="hero-content flex-col lg:flex-row-reverse gap-x-10">
-                <img src={chair} className="max-w-sm rounded-lg shadow-2xl" />
+  return (
+    <div className="hero min-h-screen bg-base-200">
+      <div className="hero-content flex-col lg:flex-row-reverse gap-x-10">
+        <img src={chair} className="max-w-sm rounded-lg shadow-2xl" />
 
-                {/* For calender component */}
-                <div>
-                    <style>{css}</style>
-                    <DayPicker
-                        mode='single'
-                        selected={date}
-                        onSelect={setDate}
-                        modifiersClassNames={{
-                            selected: 'my-selected',
-                            today: 'my-today'
-                        }}
-                    />
-                </div>
-            </div>
+        {/* For calender component */}
+        <div>
+          <style>{css}</style>
+          <DayPicker
+            mode='single'
+            selected={date}
+            onSelect={setDate}
+            modifiersClassNames={{
+              selected: 'my-selected',
+              today: 'my-today'
+            }}
+          />
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 export default AppointmentBanner;
