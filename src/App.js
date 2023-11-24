@@ -1,6 +1,7 @@
 import './App.css';
 import About from './Pages/About/About';
 import Appointment from './Pages/Appointment/Appointment';
+import Dashboard from './Pages/Dashboard/Dashboard';
 import Home from './Pages/Home/Home';
 import Login from './Pages/Login/Login';
 import RequireAuth from './Pages/Login/RequireAuth';
@@ -20,6 +21,11 @@ function App() {
         <Route path='appointment' element={
           <RequireAuth>
             <Appointment />
+          </RequireAuth>
+        } />
+        <Route path='dashboard' element={
+          <RequireAuth>
+            <Dashboard />
           </RequireAuth>
         } />
         <Route path='login' element={<Login />} />
