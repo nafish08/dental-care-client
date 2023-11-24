@@ -2,6 +2,8 @@ import './App.css';
 import About from './Pages/About/About';
 import Appointment from './Pages/Appointment/Appointment';
 import Dashboard from './Pages/Dashboard/Dashboard';
+import MyAppointments from './Pages/Dashboard/MyAppointments';
+import MyReview from './Pages/Dashboard/MyReview';
 import Home from './Pages/Home/Home';
 import Login from './Pages/Login/Login';
 import RequireAuth from './Pages/Login/RequireAuth';
@@ -28,7 +30,8 @@ function App() {
             <Dashboard />
           </RequireAuth>
         } >
-          <Route></Route>
+          <Route index element={<MyAppointments></MyAppointments>}></Route>
+          <Route path='review' element={<MyReview></MyReview>}></Route>
         </Route>
         <Route path='login' element={<Login />} />
         <Route path='signup' element={<SignUp />} />

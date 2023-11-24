@@ -1,5 +1,5 @@
 import React from 'react';
-import { Outlet } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 
 const Dashboard = () => {
     return (
@@ -10,11 +10,11 @@ const Dashboard = () => {
                 <Outlet></Outlet>
                 <label htmlFor="my-drawer-2" className='btn btn-neutral drawer-button lg:hidden'>Open Drawer</label>
             </div>
-            <div className='drawer-side'>
+            <div className='drawer-open'>
                 <label htmlFor='my-drawer-2' aria-label='close sidebar' className='drawer-overlay'></label>
                 <ul className='menu p-4 w-80 min-h-full bg-neutral-700 text-base-content'>
-                    <li><a>Service</a></li>
-                    <li><a>Service</a></li>
+                    <li><Link to="/dashboard">Service</Link></li>
+                    <li><Link to="/dashboard/review">Service</Link></li>
                 </ul>
             </div>
         </div>
