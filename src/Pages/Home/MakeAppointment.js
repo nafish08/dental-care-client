@@ -1,12 +1,13 @@
 import React from 'react';
 import doctor from '../../assets/images/doctor.png';
-import appointment from '../../assets/images/appointment.png';
+import appointment from '../../assets/images/appointment.jpg';
 import PrimaryButton from '../Shared/PrimaryButton';
 
 const MakeAppointment = () => {
     return (
         <section style={{
-            background: `url(${appointment})`
+            background: `url(${appointment})`,
+            backgroundSize: 'cover',
         }} className='flex justify-center items-center p-5'>
             <div className='flex-1 hidden lg:block'>
                 <img className='mt-[-100px]' src={doctor} />

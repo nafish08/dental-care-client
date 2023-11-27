@@ -7,8 +7,6 @@ const InfoCard = ({ img, cardTitle, bgClass, description }) => {
             <div className="card-body text-white">
                 <h2 className="card-title">{cardTitle}</h2>
                 <p>{description}</p>
-                <div className="card-actions justify-end">
-                </div>
             </div>
         </div>
     );

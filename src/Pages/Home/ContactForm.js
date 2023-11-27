@@ -1,11 +1,10 @@
 import React from 'react';
-import appointment from '../../assets/images/appointment.png';
-import PrimaryButton from '../Shared/PrimaryButton';
+import appointment from '../../assets/images/appointment.jpg';
 
 const ContactForm = () => {
     return (
         <section style={{
-            background: `url(${appointment})`
+            background: `url(${appointment})`,
         }} className='p-5 my-5 text-center'>
             <h3 className='text-xl font-bold text-primary'>Contact Us</h3>
             <h2 className='text-3xl text-white'>Stay connected with us</h2>
